@@ -14,5 +14,16 @@ namespace CarRentalSystem
         public double Longitude { get; set; }
         public Vehicle[] Vehicles { get; set; }
 
+        public Station()
+        {
+            Id = GenerateStationId();
+        }
+
+        private string GenerateStationId()
+        {
+            Random random = new Random();
+            return random.Next(0, 99).ToString();
+        }
+
     }
 }

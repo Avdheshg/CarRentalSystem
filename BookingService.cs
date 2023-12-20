@@ -30,7 +30,7 @@ namespace CarRentalSystem
         {
             try
             {
-                bookingRespository.EndBooking(bookingId, stationId);
+                await bookingRespository.EndBooking(bookingId, stationId);
             }
             catch (Exception ex)
             {
